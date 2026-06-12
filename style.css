@@ -1,0 +1,78 @@
+header{
+    text-align: center;
+}
+header h1{
+    display: inline-block;
+    border: 8px solid rgb(231, 76, 190);
+    border-style: groove;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: rgb(139, 7, 7);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 2px;
+}
+header h1:hover{
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: rgb(220, 78, 78);
+    color: aliceblue;
+    transition: all 0.3s;
+}
+body{
+    background-image: url("https://i.pinimg.com/736x/64/96/f2/6496f291b90f021a1486e75ba616fc2f.jpg");
+}
+#PlayersCard{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    text-align: center;
+    margin-right: 40px;
+ column-gap: 40px;
+ justify-content: center;
+}
+.player{
+    border-radius: 60px;
+    flex: 1 1;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border: 2px solid rgb(0, 0, 14);
+    background-color: aliceblue;
+    height: 100px;
+    padding-top: 40px;
+}
+.player:hover{
+    background-color: rgb(144, 5, 102);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#board{
+    padding-top: 200px 200px 200px;
+    margin: 0 auto;
+    width: fit-content;
+    height: 200px;
+   font-size: 30px;
+   font-weight: bold;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   row-gap: 5px;
+   column-gap: 5px;
+}
+.cell{
+    padding: 20px;
+    border: 2px black solid;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    padding-right: 40px;
+    padding-top: 40px;
+    background-color: grey;
+}
+.cell:hover{
+    cursor: cell;
+    opacity: 50%;
+    transition: all 0.3s;
+}
