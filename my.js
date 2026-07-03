@@ -190,3 +190,52 @@ ___________   Stack Memory
 // })
 // console.log(newDte);
 
+//***********************Arrays***************************//
+
+const myArr = [1,2,3,"Aarushi"];
+// console.log(myArr);
+// myArr[1] = myArr[3]
+// console.log(myArr);
+
+// const newArr = new Array(1,2,3,4,5,7)
+// console.log(newArr);
+
+//Methods of Array
+
+// console.log(myArr.includes(4));
+// myArr.push(6);
+// console.log(myArr);
+/* OUTPUT TILL NOW
+{
+[ 1, 2, 3, 'Aarushi' ]
+[ 1, 'Aarushi', 3, 'Aarushi' ]
+[ 1, 2, 3, 4, 5, 7 ]
+[ 1, 'Aarushi', 3, 'Aarushi', 6 ]
+// }*/
+// const newArr = myArr.join()
+// myArr.includes(4);
+// console.log(myArr);
+// console.log(newArr); => to string
+// Pop for removing the value
+
+//myArr.unshift(0) => at the start 
+
+//Slice and Spice
+
+// console.log("A" , myArr);
+// const myN1 = myArr.slice(1,3) => does not change the original array
+// console.log("B", myArr);
+// console.log(myN1);
+// const myN2 = myArr.splice(1,3)
+// console.log(myN2);
+// console.log(myArr);
+
+/* OUT PUT IS :-
+{
+[ 1, 2, 3, 'Aarushi', 6 ]
+B [ 1, 2, 3, 'Aarushi', 6 ]
+[ 2, 3, 'Aarushi' ]
+[ 1, 6 ]
+
+} */
+
