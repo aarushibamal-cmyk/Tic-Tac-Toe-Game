@@ -165,3 +165,28 @@ ___________   Stack Memory
 
 //******************Date And Time************************//
 
+// let myDate = new Date();
+// console.log(myDate.toString()); =>Fri Jul 03 2026 15:00:07 GMT+0530 (India Standard Time)
+// console.log(myDate.toDateString());
+// console.log(myDate.toISOString());
+// console.log(myDate.toLocaleDateString());
+// =>
+//    { Fri Jul 03 2026
+// 2026-07-03T09:31:24.450Z
+// 3/7/2026}
+// Date is an object in javascript
+
+// let myCreated = new Date(2008, 2 ,10);
+// // console.log(myCreated.toDateString()); => Months start from 0 in JS
+
+// let myTimeStamp = Math.round(Date.now()/1000);
+// console.log(myTimeStamp);
+// console.log(myCreated.getTime());
+
+// let newDte = new Date();
+// console.log(newDte.getTimezoneOffset());
+// newDte.toLocaleString('default', {
+//     weekday: "long"
+// })
+// console.log(newDte);
+
