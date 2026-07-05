@@ -388,13 +388,203 @@ console.log(String(obj)); // [object Object] */
 
 // console.log(myuser.hasOwnProperty('name')); => true;
 // Destructiring of objects
-const course = {
-    courseName: "wer",
-    price: 9403,
-    courseInst: "AAarushi"
-}
-const {price} = course
-// console.log(price); => 9403
-const {price : p} = course
-console.log(p);
+// const course = {
+//     courseName: "wer",
+//     price: 9403,
+//     courseInst: "AAarushi"
+// }
+// const {price} = course
+// // console.log(price); => 9403
+// const {price : p} = course
+// console.log(p);
 
+// {
+//     "name": "Aarushi",
+//     "age": "18",
+//     "degree": "BTECH"
+// }
+
+
+
+//*******************Functions********************//
+
+
+
+// function myName(){
+//     console.log("Aarushi");   
+// }
+// myName();
+
+// function add(a, b) {
+//     return a + b;
+// }
+// const c = add(34, "56")
+// console.log(c); => 3456
+// console.log(typeof c); => string
+// const d = add(23,"d")
+// console.log(d); => 23d
+
+// function loginUser(username = "Asa"){
+//     if(username===undefined){
+//         console.log("please enter a name");
+//         return
+//     }
+//     return `${username} Just Logged in`;
+// }
+// const returend= loginUser("Aarushi") 
+// console.log(returend);
+
+// function calculateCartPrice(...num1) {
+//     return num1;
+// }
+// console.log(calculateCartPrice(2000, 4000, 5000));
+// // Output = [ 2000, 4000, 5000 ]
+
+// const user = {
+//     userName: "Aarushi",
+//     prices: 456
+// }
+// function handle(obj) {
+//     console.log(`Username is ${obj.userName} and price is ${obj.price}`);
+// }
+// handle(user) => is prices then it shows undefined
+
+
+
+//*******************Scopes******************//
+
+// let a = 300
+//BLOCK SCOPE
+// if (true) {
+//     let a = 10
+//     const b = 20
+//     // console.log(a); =>10
+// }
+
+// console.log(a); => it says a is not defined
+// console.log(b); => it say b is not defined
+// console.log(c); => it prints c
+// console.log(a);
+
+
+//NESTED SCOPE
+
+// function one() {
+//     const userName = "Aarushi"
+//     function two() {
+//         const website = "youtbw"
+//         console.log(userName);
+//     }
+//     // console.log(website); => error
+//     // two() =>Aarushi
+// }
+// one()
+// if (true) {
+//     const userName = "ADEF"
+//     if (userName === "ADEF") {
+//         const website = "hthe"
+//         console.log(userName + website);
+//     }
+// }
+// ++++++++++++++++++INTERESTING++++++++++++++++/////
+
+// addOne(5) => no erorr
+// function addOne(num){
+//     return num+1
+// }
+
+// addTwo(6) => Shows error
+// const addTwo = function (num) {
+//     return num+2
+// }
+
+
+
+
+//*********************This and arrow function************************/
+
+// const user = {
+//     userName: "Aarushi",
+//     price: 999,
+
+//     welcomeMessage: function () {
+//         console.log(`${this.userName}`);
+//         console.log(this); // => OUTPUT
+// Aarushi
+// {
+//     userName: 'Aarushi',
+//         price: 999,
+//             welcomeMessage: [Function: welcomeMessage]
+// }
+
+//     }
+// }
+// user.welcomeMessage()=> "Aarushi"
+// user.userName = "aarhi"
+// user.welcomeMessage() => "aarhi"
+// user.welcomeMessage()
+// console.log(this); => {}
+//BUT IN WINDOWS OR BROWESER THIS SHOWS A WINDOW OBJECT AS IT IS A GLOBAL OBJECT
+
+
+// function one(){
+//     let userName ="Sd"
+//     console.log(this.userName);
+// }
+
+
+// one() => gives a lot of values
+
+// const one = () => {
+//     let name = "ert"
+//     // console.log(this.name); => undefined
+//     // console.log(this); => {}
+// }
+// one()
+
+// const add = (num1, num2)=> {
+//     return num1 + num2
+// }
+// const newdu = (num1,num2) => (num1+num2) // implicit return
+// const arr = [1,22,3,4,5]
+
+// arr.forEach(()=>{
+//     console.log("hii");
+// })
+
+// IMMEDTAITELY INVOKED FUNCTION EXPRESSIONS IIFE
+
+// (function one(){
+//named IIFE
+//     console.log("Connected");
+// })(); USE SEMICOLON
+
+// ((name) => {
+//     console.log(`23 ${name}`);
+// })("aaeruhi");
+
+
+//*****************CONTROL FLOW**********************//
+
+const isLoggedIn = true
+const temperature= 41
+// if(isLoggedIn){
+//     console.log(`${isLoggedIn} yes`);
+// }
+// if(2==="2"){
+//     console.log("executed");
+// }else if(2=="2"){
+//     console.log("not");
+// }
+
+// if(temperature<50){
+//     console.log("(._.)");
+// }else{
+//     console.log("(.-.)"); 
+// }
+
+const score = 200
+if (score>100) {
+    const power = "fly"
+    console.log(`${power}`);
+}
