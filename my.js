@@ -566,8 +566,8 @@ console.log(String(obj)); // [object Object] */
 
 //*****************CONTROL FLOW**********************//
 
-const isLoggedIn = true
-const temperature= 41
+// const isLoggedIn = true
+// const temperature= 41
 // if(isLoggedIn){
 //     console.log(`${isLoggedIn} yes`);
 // }
@@ -583,8 +583,226 @@ const temperature= 41
 //     console.log("(.-.)"); 
 // }
 
-const score = 200
-if (score>100) {
-    const power = "fly"
-    console.log(`${power}`);
-}
+// const score = 200
+// if (score>100) {
+//     const power = "fly"
+//     console.log(`${power}`);
+// }
+
+// const balance= 1000
+// if(balance>500){
+//     console.log(`balance: ${balance-500}`);
+// }
+// if(balance<500){
+//     console.log("less than 500");
+// }else if(balance<750){
+//     console.log("less than 750");
+// }else if(balance<2000){
+//     console.log("leess than 20000000");
+// }
+// else if(balance<5000){
+//     console.log("5000");
+// }
+
+// IF 2ND ELSE MATCHES THEN IT ENDS THERE AND DOES NOT CHECK FOR THE OTHER CONDITIONS
+
+// const userLoggedIn = true;
+// const debitCard = true;
+// if(userLoggedIn&& debitCard){
+//     console.log("allowed to shop");
+// }else if(userLoggedIn && debitCard == true){
+//     console.log("Allowed to see only");
+// }
+// else{
+//     console.log("First login");
+// }n
+
+// switch (balance) {
+//     case 500:
+//         console.log("less than 500")
+//         break;
+//     case 1000:
+//         console.log("less than 1000")
+//         break;
+//     case 400:
+//         console.log("less than 400")
+//         break;
+//     default:
+//         console.log("not true");
+//         break;
+// }
+
+//*********TRUTHY AND FALSY*************//
+
+// const email = "drink"
+// const email2 =""
+// if(email){
+//     console.log("yess");
+// }// YES
+
+// if(email2){
+//     console.log("true");
+// }
+// else{
+//     console.log("false");
+// }//FALSE
+
+// if([]){
+//     console.log(true);
+// } //YES
+
+
+//falsy
+// false , 0 , -0 , BigInt 0n , "" , null undefined ,NAN
+
+//truthy
+// [], "0", " ","false", ,{} , function(){},
+
+//Nullish Coalescing Operator (??) : null undefined
+
+// let val1
+// // val1 = 5??10 =>5
+// val1 = null??10 => 10
+// val1 = undefined ?? 15 =>15
+// val1 = null??10??20 =>10
+// console.log(val1);
+
+//terniary operator
+
+// conditon? true : false
+// const price = 800
+// price>200 ? console.log(true) : console.log(false); => true
+
+
+// FOR , DO WHILE LOOPS
+// const array = [45,67,8,91,2,456,6768,5,987]
+// for (let i = 0; i < array.length; i=i+2) {
+//     const element = array[i];
+//     console.log(`[${i}: ${element}]`);
+// }
+// for (let i = 0; i < 4; i++) {
+//    for (let j = 0; j < 5; j++) {
+//     console.log(i,j);
+
+//    }
+// }
+
+// break and continue
+
+// for (let index = 1; index < 10; index++) {
+//     if (index == 5) {
+//         console.log("detected", index);
+//         break;
+//     }
+//     console.log(index);
+// }
+// 1
+// 2
+// 3
+// 4
+// detected 5
+
+// for (let index = 1; index < 10; index++) {
+//     if (index == 5) {
+//         console.log("detected", index);
+//         continue;
+//     }
+//     console.log(index);
+// }
+// 1
+// 2
+// 3
+// 4
+// detected 5
+// 6
+// 7
+// 8
+// 9
+
+// WHILE LOOP
+let i = 0;
+// while (i != 10) {
+//     console.log(i);
+//     i++;
+// }
+// let myArr = ["frodo", "aaragon" , "gimli", "legolas"]
+// while(i< myArr.length){
+//     console.log("Name is:" , myArr[i]);
+//     i++;
+// }
+// do {
+//     console.log(i);
+// } while (i==0);
+
+// FOR OF these loops are specific loops
+
+// ["", "", ""]
+// [{},{},{}]
+
+// const arr = [1,2,3,45,67]
+// for (const element of arr) {
+//     console.log(element);
+// }
+
+// const greetings = "Hello Aarushi";
+// for (const greet of greetings) {
+//     console.log(greet);
+// }
+
+// MAPS
+
+// const map = new Map()
+// map.set('IN',"INDIA")
+// map.set('Fr',"France")
+// map.set('GR',"Germany")
+// console.log(map);
+// for (const [element,val] of map) {
+//     console.log(element, "-:", val);  
+// }
+
+// for object its does not work
+
+
+// const myObj = {
+//     js: "javascript",
+//     cpp: "c++",
+//     rb: "ruby",
+//     sw: "swift"
+// }
+
+// for (const key in myObj) {
+//     console.log(key);
+// } // output is js cpp rb sw
+
+// for (const key in myObj) {
+//     console.log(`${key} shortcut is for ${myObj[key]}`);
+// }
+// => js shortcut is for javascript
+// cpp shortcut is for c++
+// rb shortcut is for ruby
+// sw shortcut is for swift
+
+// const myarr = ["js", "java","ruby","python"]
+
+// for (const key in myarr) {
+//    console.log(key);
+// } //OUTPUT 0,1,2,,3
+
+// for (const key in myarr) {
+//    console.log(myarr[key]);
+// } => values;
+
+// MAP IS NOT ITERATABLE SO FOR IN DOES NOT WORK
+
+//****************FOR EACH LOOP************************ */
+const coding = [ "js", "java", "python", "reddit", "cpp","html", "css"]
+// coding.forEach(e => {
+//     console.log(e);
+// });
+
+// coding.forEach( d =>{
+
+// })
+// coding.forEach(function (e){
+
+// })
