@@ -795,7 +795,7 @@ let i = 0;
 // MAP IS NOT ITERATABLE SO FOR IN DOES NOT WORK
 
 //****************FOR EACH LOOP************************ */
-const coding = [ "js", "java", "python", "reddit", "cpp","html", "css"]
+// const coding = ["js", "java", "python", "reddit", "cpp", "html", "css"]
 // coding.forEach(e => {
 //     console.log(e);
 // });
@@ -806,3 +806,100 @@ const coding = [ "js", "java", "python", "reddit", "cpp","html", "css"]
 // coding.forEach(function (e){
 
 // })
+
+// coding.forEach((item,index,arr)=>{
+//     console.log(item,index,arr);
+// })
+
+// coding.forEach((item,index)=>{
+//     if(index<4){
+//         console.log(item,index);
+//     }
+//     console.log(index);
+// })
+
+// const values = coding.forEach((item)=>{
+//     console.log(item);
+// })
+// console.log(values); => undefined
+// For each never return even if we write return
+
+// const nums = [1, 2, 3, 4, 5, 6, 9, 7, 8, 10]
+// const newnum = nums.filter((item) => {
+//     return item > 5
+// })
+// console.log(newnum); // 6 7 8 .... 10
+
+// IF RETURN IS NOT EXPLICIT THEN [] EMPTY ARRAY IS RETURNED
+
+// const nums1 = []
+
+// nums.forEach((item) => {
+//     if (item > 5) {
+//         nums1.push(item);
+//     }
+// })
+// console.log(nums1);
+
+// const books = [
+//     { title: "Book one", genre: "fiction", publish: 1981 },
+//     { title: "Book two", genre: "history", publish: 1984 },
+//     { title: "Book three", genre: "science", publish: 1921 },
+//     { title: "Book four", genre: "fiction", publish: 1917},
+//     { title: "Book five", genre: "Non-Fiction", publish: 1900 },
+//     { title: "Book six", genre: "fiction", publish: 1931 },
+//     { title: "Book seven", genre: "History", publish: 1966 },
+//     { title: "Book eight", genre: "Science", publish: 2008 },
+//     { title: "Book nine", genre: "fiction", publish: 2000 }
+// ]
+
+// const myBook = books.filter((item)=>{
+//    return item.genre == "fiction"
+// })
+// console.log(myBook);
+// const book2 = books.filter((item)=>{
+//     return (item.publish>=1989 && item.genre == "fiction")
+// })
+// console.log(book2);
+
+
+// MAPS
+// const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// const new1 = myNums.map((num)=> num+10);
+// console.log(new1);
+
+// const num1 = myNums.map((item) => {
+//     return item * 10
+// }).map((item) => {
+//     return item + 1
+// }).filter((item) => item > 45)
+// console.log(num1);
+
+
+// ***************REDUCE METHOD***********************//
+
+// const arr = [1, 2, 3, 4]
+// const initialVal = 0;
+// const sumInitial = arr.reduce((acc, curr) => {
+//     console.log(acc, "->", curr);
+//     return acc + curr
+// }, initialVal)
+// console.log("total is: ", sumInitial);
+
+// const shoppingCart = [
+//     { itemName: "js course", price: 2999 },
+//     { itemName: "ds course", price: 299 },
+//     { itemName: "python course", price: 2345 },
+//     { itemName: " aiml course", price: 8769 },
+//     { itemName: "ai course", price: 9999 },
+// ]
+// const myTotal = shoppingCart.reduce((acc,curr)=>{
+//     return acc + curr.price;
+// },0)
+// console.log("Your total is: $",myTotal);
+
+
+
+
+// *************DOM (DOCUMENT OBJECCT MODEL)*****************//
