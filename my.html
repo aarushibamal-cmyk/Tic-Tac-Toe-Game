@@ -1,0 +1,140 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Learning</title>
+    <style>
+        .bg-black {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[0]);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //    console.log(parent.children[i].innerHTML);
+    // }
+    parent.children[0].style.color = " pink"
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+    // console.log("NODES: ",parent.childNodes); => 9 NODES
+
+</script>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AarushiBamel</title>
+</head>
+
+<body style="background-color: black; color: white;">
+
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor = " red"
+    div.style.padding = "12px";
+    // div.innerText = "HELLO WORLD!"
+    const addText = document.createTextNode("Hello WORLD!")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+    const color = ["pink", " blue", "green", "orange"];
+    color.forEach((c) => {
+        const div = document.createElement('div')
+        div.className = "main"
+        div.id = Math.round(Math.random() * 10 + 1)
+        div.setAttribute("title", "generated title")
+        div.style.backgroundColor = c
+        div.style.padding = "12px";
+        div.style.margin = " 10px"
+        const addText = document.createTextNode("Hello WORLD!")
+        div.appendChild(addText)
+        document.body.appendChild(div)
+    })
+</script>
+
+</html> -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLangugae(lang) {
+        const myLi = document.createElement('li');
+        myLi.innerHTML = `${lang}`
+        document.querySelector('.language').appendChild(myLi);
+    }
+    addLangugae("CPP")
+    addLangugae("PYTHON")
+
+    function addopti(lang) {
+        const myli1 = document.createElement('li');
+        myli1.appendChild(document.createTextNode(lang));
+        document.querySelector('.language').appendChild(myli1)
+    }
+    addopti("JAVA")
+
+    // EDIT
+    const secondLang = document.querySelector('li:nth-child(2)')
+    //  secondLang.innerHTML = "Typescript";
+    const newLi = document.createElement('li')
+    newLi.textContent = "Typescript"
+    secondLang.replaceWith(newLi)
+
+    // EDIT 
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = '<li>Type</li>'
+
+
+    // remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+
+</html>

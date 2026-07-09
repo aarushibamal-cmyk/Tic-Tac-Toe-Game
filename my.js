@@ -902,4 +902,76 @@ let i = 0;
 
 
 
-// *************DOM (DOCUMENT OBJECCT MODEL)*****************//
+//*********DOM (DOCUMENT OBJECCT MODEL)************//
+
+
+// title.innerHTML
+// 'Dom learning on chai aur code<span style="display: none;"> test text</span>'
+// title.textContent
+// 'Dom learning on chai aur code test text'
+// title.innerText
+// 'Dom learning on chai aur code'
+
+// document.querySelector('ul')
+// <ul>​…​</ul>​
+// const myul = document.querySelector('ul')
+// undefined
+// myul.querySelector('li')
+// <li style=​"background-color:​ pink;​ color:​ blue;​">​…​</li>​::marker​"JS"</li>​
+// const green = myul.querySelector('li')
+// undefined
+// green.style.backgroundColor="pink"
+// 'pink'
+// myul.querySelector('li').style.colo
+// undefined
+// myul.querySelector('li').style.color = "blue"
+// 'blue'
+
+
+
+// document.getElementsByClassName("list-item")
+// HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+// 0
+// : 
+// li.list-item
+// 1
+// : 
+// li.list-item
+// 2
+// : 
+// li.list-item
+// 3
+// : 
+// li.list-item
+// length
+// : 
+// 4
+// [[Prototype]]
+// : 
+// HTMLCollection
+// const tempLi = document.getElementsByClassName("list-item")
+// undefined
+// Array.from(tempLi)
+// (4) [li.list-item, li.list-item, li.list-item, li.list-item]
+// 0
+// : 
+// li.list-item
+// 1
+// : 
+// li.list-item
+// 2
+// : 
+// li.list-item
+// 3
+// : 
+// li.list-item
+// length
+// : 
+// 4
+// [[Prototype]]
+// : 
+// Array(0)
+
+
+const myparent = document.querySelector('.parent')
+console.log(myparent);
