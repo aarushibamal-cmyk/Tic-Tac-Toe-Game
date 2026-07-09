@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drake</title>
+</head>
+
+<body style="background-color: black; color:aliceblue;">
+    <h1>
+        HELLO WORLD!
+    </h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    setTimeout(function(){
+        console.log("hii");
+    }, 2000)
+const changeText = function () {
+    document.querySelector('h1').innerHTML = "<h1>Aarushi Bamel</h1>";
+}
+const chnageme = setTimeout(changeText,2000)
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(chnageme)
+    console.log("Stoped");
+})
+
+</script>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chia seeds</title>
+</head>
+
+<body style="background-color: black; color:aliceblue;">
+    <h1>HELLO WORLD!</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    //generate random color
+    const randomColor = function () {
+        const hex = "0123456789ABCDEF"
+        let color = "#"
+        for (let i = 0; i < 6; i++) {
+            color += hex[Math.floor(Math.random() * 16)]
+        }
+        return color;
+    }
+    const start = document.querySelector('#start');
+    const stop = document.querySelector('#stop');
+    let interval;
+    start.addEventListener('click', function () {
+        if (!interval) {
+            interval = setInterval(function () {
+                document.body.style.backgroundColor = randomColor();
+            }, 1000)
+        }
+    })
+    stop.addEventListener('click', function () {
+        clearInterval(interval)
+        interval = null;
+    })
+</script>
+
+</html>

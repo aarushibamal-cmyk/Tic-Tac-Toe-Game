@@ -89,7 +89,7 @@
 
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -135,6 +135,94 @@
     // remove
     const lastLang = document.querySelector('li:last-child')
     lastLang.remove()
+</script>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images in Unordered List</title>
+</head>
+
+<body style="background-color: black; color: aliceblue;">
+
+    <ul style="list-style: none; display: flex; flex-wrap: wrap; gap: 20px; padding: 20px;" id="images">
+
+        <li>
+            <img id="img1" src="https://picsum.photos/id/10/600/400" alt="Nature 1"
+                style="width:320px; height:220px; object-fit:cover; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.25); cursor:pointer;">
+        </li>
+
+        <li>
+            <img id="img2" src="https://picsum.photos/id/20/600/400" alt="Nature 2"
+                style="width:320px; height:220px; object-fit:cover; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.25); cursor:pointer;">
+        </li>
+
+        <li>
+            <img id="img3" src="https://picsum.photos/id/30/600/400" alt="Nature 3"
+                style="width:320px; height:220px; object-fit:cover; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.25); cursor:pointer;">
+        </li>
+
+        <li>
+            <img id="img4" src="https://picsum.photos/id/40/600/400" alt="Nature 4"
+                style="width:320px; height:220px; object-fit:cover; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.25); cursor:pointer;">
+        </li>
+
+        <li>
+            <img id="img5" src="https://picsum.photos/id/50/600/400" alt="Nature 5"
+                style="width:320px; height:220px; object-fit:cover; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.25); cursor:pointer;">
+        </li>
+
+        <li>
+            <img id="img6" src="https://picsum.photos/id/60/600/400" alt="Nature 6"
+                style="width:320px; height:220px; object-fit:cover; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.25); cursor:pointer;">
+        </li>
+
+        <li>
+            <img id="img7" src="https://picsum.photos/id/70/600/400" alt="Nature 7"
+                style="width:320px; height:220px; object-fit:cover; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.25); cursor:pointer;">
+        </li>
+            <a  href="https://www.google.com" target="_blank" id="google">google</a>
+    </ul>
+
+</body>
+<script>
+    // IN JAVASCRIPT ALL EVENTS RUN SYNCHRONOULSY AND SEQUENTAILY
+    // document.getElementById('img2').onclick = function () {
+    //     alert("Clicked")
+    // }
+    // attachEvent()
+    // jquery - on
+    // type , timestampt , default prevented 
+    // target , toElement , srcElement , current Target
+    // clientX, CLIENT y screenX , screenY
+    // altkey , ctrlKey , shiftKey , keycode
+
+// document.getElementById('images').addEventListener('click', function (e) {
+//         console.log("clicked inside the ul");
+//     }, true)
+//     document.getElementById('img2').addEventListener('click', function (e) {
+//         console.log("clicked img2");
+//         e.stopPropagation()
+//     }, true)
+//     document.getElementById('google').addEventListener('click',function(e){
+//         e.preventDefault()
+//     },false)
+
+   document.querySelector('#images').addEventListener('click',function(e){
+    console.log(e.target.tagName);
+    if(e.target.tagName == "IMG"){
+    let removeIt = e.target.parentNode;
+    removeIt.remove()
+    }
+    // removeIt.parentNode.removeChild(removeIt)
+   })
 </script>
 
 </html>
