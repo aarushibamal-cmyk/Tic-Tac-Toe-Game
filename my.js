@@ -973,5 +973,206 @@ let i = 0;
 // Array(0)
 
 
-const myparent = document.querySelector('.parent')
-console.log(myparent);
+// const myparent = document.querySelector('.parent')
+// console.log(myparent);
+
+// let arr = [100,50,46,30,50,70,100,10];
+// not duplicates
+
+// let arr2 = []
+// let set1 = new Set();
+// for (let i = 0; i < arr.length; i++) {
+//     set1.add(arr[i]);
+// }
+// console.log(set1);
+
+// const mpp = new Map()
+
+// const newArr = arr.map((data,index)=>{
+//   data = arr[index]>40
+//   return data
+// })
+// console.log(newArr);
+
+// let a = null;
+// console.log(a);
+
+// var x =0;
+// var y = '0';
+// var z = false;
+
+// console.log(x==y); //=> true
+// console.log(y==z); //=> false
+// console.log(x==z);// => true
+
+// const arr = [100, -200, 300, -400, -800]
+
+// const newArr = arr.filter((item) => {
+//   return item < 0;
+// })
+// console.log(newArr);
+// // let n = 4;
+// function factorial(n) {
+//   if (n == 1 || n == 0) {
+//     return 1;
+//   }
+//   return factorial(n - 1) * n;
+// }
+// const ans = factorial(4)
+// console.log(ans);
+
+// console.log(null== undefined); // true
+
+// console.log(null === undefined); // false
+// console.log([] + []);
+
+// console.log({} + {});
+
+// console.log("raza" - "ali");
+
+// let str = "AliRaza"
+
+// for (let i = 0; i < str.length; i++) {
+//   let count = 0;
+//   for (let j = 0; j < str.length; j++) {
+//     if (str[i].toLowerCase() === str[j].toLowerCase()) {
+//       count++;
+//     }
+//   }
+//   console.log(str[i], "->", count);
+// }
+
+// console.log(a);
+// console.log(b);
+// var a = b = 200
+
+// REST OPERATOR AND SPREAD OPERATOR
+// function params(...arr) {
+//   console.log(typeof(arr));
+// }
+
+// params(1,2,3,45,6)
+
+// console.log('5'+8); // 58
+// console.log('5'- 3); //2
+
+// console.log(NaN === NaN); because we dont know what type of nan like infinity can never be equal to infinity
+
+// var a = 200
+// {
+//   var a = 400
+// }
+// let b = a;
+// {
+//   let  b = -400
+// }
+// console.log(b); // 400
+
+
+
+
+
+
+
+
+//********************PROMISE********************//
+
+// const promise1 = new Promise(function(resolve,reject){
+//   setTimeout(function(){
+//     console.log("async task is complete");
+//     resolve();
+//   },1000)
+// })
+
+// promise1.then(function(){
+//   console.log("Promise consumed");
+// })
+
+//  new Promise((resolve, reject) => {
+//   setTimeout(function(){
+//     console.log("task 2");
+//     resolve();
+//   },1000)
+// }).then(function(){
+//   console.log("async 2 solved");
+
+// })
+
+// const promise2 = new Promise((resolve, reject) => {
+//   setTimeout(()=>{
+//     resolve({username:"Aarushi" , email:"aarushibamal@google.com"})
+//   },1000)
+// })
+// promise2.then((user)=>{
+//   console.log(user); // OBJECT RECIEVED
+// })
+
+// const promise3 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     let error = true
+//     if (!error) {
+//       resolve({ username: "Aarushi", email: "aarushibamal@google.com" })
+//      }
+//     else {
+//       reject('!!!!!!Error something went wrong')
+//     }
+//   }, 1000);
+// })
+
+// promise3.then((user) => {
+//   console.log(user);
+//   return user.username
+// }).then((username) => {
+//   console.log(username);
+// }).catch((err) => {
+//   console.log(err);
+// }).finally(() => {
+//   console.log("finnaly the promise is either resolved or rejected");
+// })
+
+// const promise4 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     let error = true
+//     if (!error) {
+//       resolve({ username: "javascript", password: "1234" })
+//     }
+//     else {
+//       reject('ERROR:JAVASCRIPT WENT WRONG')
+//     }
+//   }, 1000);
+// })
+
+// async function consumed() {
+//   try {
+//     const response = await promise4
+//     console.log(response);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// }
+// consumed()
+
+// async function getAllUser(user) {
+//   try {
+//     const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//     const data = await response.json()
+//     console.log(data);
+//   } catch (error) {
+//     console.log("ERROR:", error);
+//   }
+// }
+// getAllUser()
+
+
+// fetch('https://jsonplaceholder.typicode.com/users')
+// .then((response)=>{
+//   return response.json()
+// }).then((data)=>{
+//   console.log(data);
+// })
+// .catch((error)=>{
+//   console.log(error);
+// })
+
+
+
