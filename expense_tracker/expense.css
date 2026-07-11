@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.container{
+    width: 500px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.title h1{
+    color: #333;
+    font-size: 2rem;
+}
+
+.expense-add{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.expense-add label{
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+}
+
+#input-field,
+#category{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#input-field:focus,
+#category:focus{
+    border-color: #4CAF50;
+}
+
+.addbtn{
+    padding: 12px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.addbtn:hover{
+    background: #3d9142;
+}
+
+.list{
+    margin-top: 25px;
+}
+
+.expense-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.expenseListDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 6px solid #4CAF50;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.expenseListDiv h2{
+    font-size: 18px;
+    color: #333;
+}
+
+.expenseListDiv input{
+    width: 120px;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.expenseListDiv button{
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.expenseListDiv button:first-of-type{
+    background: #ff9800;
+}
+
+.expenseListDiv button:first-of-type:hover{
+    background: #e68a00;
+}
+
+.expenseListDiv button:nth-of-type(2){
+    background: #f44336;
+}
+
+.expenseListDiv button:nth-of-type(2):hover{
+    background: #d32f2f;
+}
+
+.expenseListDiv button:last-of-type{
+    background: #2196f3;
+}
+
+.expenseListDiv button:last-of-type:hover{
+    background: #1976d2;
+}
+
+@media(max-width:600px){
+
+    body{
+        padding: 20px;
+    }
+
+    .container{
+        width:100%;
+    }
+
+    .expenseListDiv{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .expenseListDiv button{
+        width:100%;
+    }
+
+    .expenseListDiv input{
+        width:100%;
+    }
+}

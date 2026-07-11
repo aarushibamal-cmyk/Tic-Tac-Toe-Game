@@ -1176,3 +1176,82 @@ let i = 0;
 
 
 
+
+//******************CLASSES AND OBJECTS***************************//
+
+/* 
+# javascript and classes
+
+ OBJECT 
+- collection of properties and methods
+- toLowerCase
+
+## why use OOP
+
+## part of OOP
+Object literal
+
+- Constructor function
+-Prortotypes
+- Classes
+- Instances(new, this)
+
+# 4pillars
+-Abstraction - means hiding details like in fetch
+- Encapsulation - Wrap up data 
+- Inheritance
+- Polymorphism - one method does many works
+
+*/
+
+// Object Literal
+
+const user = {
+  username: "Aarushi",
+  lastName: "Bamel",
+  loginCount: 8,
+  isLoggedIn: true,
+  getUserDetail() {
+    // console.log(`User Full Name: ${this.username} ${this.lastName}`);
+    console.log(this);
+    
+  }
+}
+
+// console.log(user);
+// console.log(user.getUserDetail());
+// console.log(this); ={}
+
+// const promiseOne = new Promise() // here new is constructor function
+// CONSTRUCTOR FUNCTION
+
+function User(userName,loginCount , isLoggedIN) {
+  this.username= userName
+  this.loginCount = loginCount;
+  this.isLoggedIN = isLoggedIN;
+  this.greeting = function(){
+    console.log(`Welcome ${this.username}`);
+  }
+  // this.greeting()
+  return this
+}
+
+const userOne = new User("Aarushi", 45, true)
+// const user2 = User("Drink", 22, false) // it overwrite
+// const user2 = new User("drink", 22,false)
+// console.log(userOne); 
+// console.log(user2); 
+// console.log(userOne.constructor); 
+
+
+
+
+// Firstly An empty object is created
+// Then constructor function call due to new keyword
+// All the variables are assigned using this keyword
+// then in function
+
+
+
+//***********************PROTOTYPE BEHAVIOUR*****************************//
+
