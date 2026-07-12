@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    background: #eef2f7;
+}
+
+.container {
+    width: 380px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+    text-align: center;
+    color: #2d3436;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.city-div {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.city-div input {
+    flex: 1;
+    border: 2px solid #dfe6e9;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.city-div input:focus {
+    border-color: #0984e3;
+}
+
+.search-btn {
+    width: 50px;
+    border: none;
+    border-radius: 12px;
+    background: #0984e3;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background: #066ac0;
+    transform: translateY(-2px);
+}
+
+.city-display {
+    background: #f8f9fb;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #e8ecef;
+}
+
+.city-name {
+    font-size: 28px;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.weather-icon {
+    width: 100px;
+    margin: 10px auto;
+}
+
+.temperature {
+    font-size: 56px;
+    font-weight: bold;
+    color: #0984e3;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 18px;
+    color: #636e72;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.info-card {
+    flex: 1;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h4 {
+    color: #636e72;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.info-card p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3436;
+}
